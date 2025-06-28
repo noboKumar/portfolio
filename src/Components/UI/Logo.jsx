@@ -1,9 +1,11 @@
 import React from "react";
 import LogoPng from "../../assets/NK-logo.png";
 
-const Logo = () => {
+const Logo = ({ theme }) => {
   return (
-    <div className="w-25 btn btn-ghost py-8">
+    <div
+      className={`btn btn-ghost w-25 py-8 ${theme === "light" ? "invert" : ""}`}
+    >
       <img src={LogoPng} alt="Logo" />
     </div>
   );
