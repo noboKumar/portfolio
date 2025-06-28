@@ -1,14 +1,12 @@
-import React, { useState } from "react";
+import React from "react";
 import Logo from "./Logo";
 import Container from "./Container";
 import { MdOutlineFileDownload } from "react-icons/md";
 import ToggleTheme from "./ToggleTheme";
 import { GiHamburgerMenu } from "react-icons/gi";
 
-const NavBar = () => {
-  const [theme, setTheme] = useState(() => {
-    return localStorage.getItem("theme") || "light";
-  });
+const NavBar = ({theme, setTheme}) => {
+
   const NavLinks = (
     <>
       <li>
