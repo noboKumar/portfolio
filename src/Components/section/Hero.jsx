@@ -8,7 +8,7 @@ import { BsTwitterX } from "react-icons/bs";
 
 const Hero = () => {
   return (
-    <Container className="flex flex-col-reverse items-center justify-around gap-10 lg:flex-row lg:gap-0">
+    <Container className="my-20 lg:my-30 flex flex-col-reverse items-center justify-around gap-10 lg:flex-row lg:gap-0">
       <div className="space-y-4 text-center lg:text-left">
         <div>
           <p className="text-lg">Hi, i am</p>
@@ -32,9 +32,11 @@ const Hero = () => {
           />
         </p>
         <p className="text-xl lg:w-[900px]">
-          I specialize in creating performant, responsive, and maintainable web applications using React, TailwindCSS, Express.js, MongoDB. Let's discuss your next project.
+          I specialize in creating performant, responsive, and maintainable web
+          applications using React, TailwindCSS, Express.js, MongoDB. Let's
+          discuss your next project.
         </p>
-        <div className="flex justify-center lg:justify-start items-center gap-10 py-4 text-4xl [&>*]:cursor-pointer">
+        <div className="flex items-center justify-center gap-10 py-4 text-4xl lg:justify-start [&>*]:cursor-pointer">
           <a
             href="https://github.com/noboKumar"
             target="_blank"
