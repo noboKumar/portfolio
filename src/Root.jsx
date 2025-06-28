@@ -12,7 +12,7 @@ const Root = () => {
     return localStorage.getItem("theme") || "light";
   });
   return (
-    <div className="font bg-base-100 relative min-h-screen w-full overflow-hidden">
+    <div className="font bg-base-100 relative min-h-screen w-full">
       {/*Background Layer*/}
       <div className="pointer-events-none absolute inset-0 z-0">
         {/* Sparkles */}
@@ -40,7 +40,7 @@ const Root = () => {
       {/*Foreground Content Layer*/}
       <div className="relative z-10 flex min-h-screen w-full flex-col">
         <ClickSpark
-          sparkColor="#fff"
+          sparkColor={`${theme === "light" ? "#000000" : "#FFFFFF"}`}
           sparkSize={10}
           sparkRadius={15}
           sparkCount={8}
