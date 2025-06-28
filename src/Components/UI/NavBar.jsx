@@ -3,6 +3,7 @@ import Logo from "./Logo";
 import Container from "./Container";
 import { MdOutlineFileDownload } from "react-icons/md";
 import ToggleTheme from "./ToggleTheme";
+import { GiHamburgerMenu } from "react-icons/gi";
 
 const NavBar = () => {
   const [theme, setTheme] = useState(() => {
@@ -22,25 +23,11 @@ const NavBar = () => {
     </>
   );
   return (
-    <Container className="navbar bg-base-200 sticky top-0 z-10 rounded-full px-10 shadow-sm">
+    <Container className="navbar bg-base-200 sticky top-5 z-10 rounded-full px-5 shadow-sm md:px-10">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-5 w-5"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              {" "}
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M4 6h16M4 12h8m-8 6h16"
-              />{" "}
-            </svg>
+            <GiHamburgerMenu size={25} />
           </div>
           <ul
             tabIndex={0}
@@ -58,7 +45,7 @@ const NavBar = () => {
       </div>
       <div className="navbar-end gap-5">
         <ToggleTheme theme={theme} setTheme={setTheme}></ToggleTheme>
-        <a className="btn btn-primary inline-flex items-center">
+        <a className="btn btn-primary inline-flex items-center px-2 md:px-4">
           <MdOutlineFileDownload size={20} />
           Resume
         </a>
