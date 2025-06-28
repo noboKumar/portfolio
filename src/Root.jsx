@@ -4,6 +4,7 @@ import Hero from "./Components/section/Hero";
 import About from "./Components/section/About";
 import { cn } from "./lib/utils";
 import ClickSpark from "./Components/UI/ClickSpark";
+import Skills from "./Components/section/Skills";
 
 const Root = () => {
   return (
@@ -15,7 +16,7 @@ const Root = () => {
             className={cn(
               "absolute inset-0 opacity-20",
               "[background-size:40px_40px]",
-              "[background-image:linear-gradient(to_right,#e4e4e7_1px,transparent_1px),linear-gradient(to_bottom,#e4e4e7_1px,transparent_1px)]",
+              "[background-image:linear-gradient(to_right,#a3a3a3_1px,transparent_1px),linear-gradient(to_bottom,#a3a3a3_1px,transparent_1px)]",
               "[data-theme=dark]:[background-image:linear-gradient(to_right,#262626_1px,transparent_1px),linear-gradient(to_bottom,#262626_1px,transparent_1px)]",
             )}
           />
@@ -31,6 +32,7 @@ const Root = () => {
             >
               <Hero />
               <About></About>
+              <Skills></Skills>
             </ClickSpark>
           </div>
         </div>
