@@ -1,11 +1,12 @@
-import React from 'react';
+import React from "react";
+import NavBar from "./Components/UI/NavBar";
 
 const Root = () => {
-    return (
-        <div>
-            This is Root
-        </div>
-    );
+  return (
+    <div className="font">
+      <NavBar></NavBar>
+    </div>
+  );
 };
 
 export default Root;
