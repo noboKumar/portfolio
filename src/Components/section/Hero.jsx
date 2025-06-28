@@ -34,7 +34,7 @@ const Hero = () => {
         <p className="text-xl lg:w-[900px]">
           I specialize in creating performant, responsive, and maintainable web applications using React, TailwindCSS, Express.js, MongoDB. Let's discuss your next project.
         </p>
-        <div className="flex items-center gap-10 py-4 text-4xl [&>*]:cursor-pointer">
+        <div className="flex justify-center lg:justify-start items-center gap-10 py-4 text-4xl [&>*]:cursor-pointer">
           <a
             href="https://github.com/noboKumar"
             target="_blank"
