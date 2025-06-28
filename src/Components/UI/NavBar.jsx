@@ -7,10 +7,7 @@ const NavBar = () => {
   const NavLinks = (
     <>
       <li>
-        <a>Home</a>
-      </li>
-      <li>
-        <a>About</a>
+        <a>About Me</a>
       </li>
       <li>
         <a>Projects</a>
@@ -21,8 +18,8 @@ const NavBar = () => {
     </>
   );
   return (
-    <div className="bg-base-200">
-      <Container>
+    <div className="">
+      <Container className="bg-base-200 px-10 rounded-full shadow-sm border-b border-gray-600">
         <div className="navbar sticky top-0 z-10 shadow-sm">
           <div className="navbar-start">
             <div className="dropdown">

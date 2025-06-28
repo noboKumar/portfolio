@@ -3,7 +3,7 @@ import NavBar from "./Components/UI/NavBar";
 
 const Root = () => {
   return (
-    <div className="font">
+    <div className="font pt-8">
       <NavBar></NavBar>
     </div>
   );
