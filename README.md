@@ -9,7 +9,6 @@ A sleek, modern, and fully responsive developer portfolio built with **React 19*
 ## 🚀 Live Demo
 
 🌍 [https://nobokumar-portfolio.vercel.app/](https://nobokumar-portfolio.vercel.app/)  
-*(Replace with your actual link)*
 
 ---
 
