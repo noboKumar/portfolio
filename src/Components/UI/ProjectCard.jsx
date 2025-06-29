@@ -12,20 +12,22 @@ const ProjectCard = ({ projectData }) => {
           key={idx}
           spotlightSize={50}
           spotlightColor={"rgba(255, 255, 255, 0.08)"}
-          className="mx-auto flex max-w-7xl items-center gap-5 rounded-2xl shadow-xl"
+          className="mx-auto flex flex-col lg:flex-row max-w-7xl items-center gap-5 rounded-2xl shadow-xl"
         >
           {/* img section */}
-          <div className="max-h-[400px] flex-1 overflow-y-auto p-5">
-            <img
+          <div className="max-h-[400px] w-full flex-1 overflow-y-auto p-5">
+            <div className="h-full">
+              <img
               src={project.photo}
               alt={project.title}
-              className="h-full w-full rounded-2xl object-cover"
+              className="h-full w-full rounded-2xl object-cover object-top"
             />
+            </div>
           </div>
           {/* text section */}
           <div className="flex-1 space-y-5">
-            <h3 className="text-4xl font-semibold">{project.title}</h3>
-            <p className="text-lg">{project.description}</p>
+            <h3 className="text-3xl md:text-4xl font-semibold">{project.title}</h3>
+            <p className="md:text-lg">{project.description}</p>
             <div className="flex flex-wrap gap-2">
               {project.techStack.map((tech, idx) => (
                 <p
