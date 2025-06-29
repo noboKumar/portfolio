@@ -5,7 +5,7 @@ import DecryptedText from "../UI/DecryptedText";
 
 const About = () => {
   return (
-    <Container className="mt-20 space-y-5">
+    <Container id="about" className="mt-20 space-y-5">
       <Heading text={"About Me"}></Heading>
       <div className="mx-auto w-11/12 text-center text-lg leading-8">
         <DecryptedText

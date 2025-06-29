@@ -5,7 +5,7 @@ import TechIcons from "../UI/TechIcons";
 
 const Skills = () => {
   return (
-    <Container className="mt-20">
+    <Container id={"skills"} className="mt-20">
       <Heading text="Skills"></Heading>
       <div className="text-7xl">
         <TechIcons></TechIcons>

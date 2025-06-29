@@ -119,7 +119,7 @@ const Projects = () => {
     },
   ];
   return (
-    <Container className="my-20">
+    <Container id={"projects"} className="my-20">
       <Heading text={"Projects"}></Heading>
       <ProjectCard projectData={projectData}></ProjectCard>
     </Container>

@@ -1,12 +1,15 @@
 import React from "react";
 import LogoPng from "../../assets/NK-logo.png";
+import { Link } from "react-scroll";
 
 const Logo = ({ theme }) => {
   return (
     <div
-      className={`px-5 w-20 md:w-25 py-5 ${theme === "light" ? "invert" : ""}`}
+      className={`w-20 px-5 py-5 md:w-25 ${theme === "light" ? "invert" : ""}`}
     >
-      <img src={LogoPng} alt="Logo" />
+      <Link to="hero" smooth={true} duration={500} offset={-200} spy={true} activeClass="active">
+        <img src={LogoPng} alt="Logo" />
+      </Link>
     </div>
   );
 };

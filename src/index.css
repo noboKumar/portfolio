@@ -27,6 +27,10 @@
   }
 }
 
+.active{
+  @apply bg-base-300
+}
+
 .heading-font {
   font-family: "DM Serif Display", serif;
 }
