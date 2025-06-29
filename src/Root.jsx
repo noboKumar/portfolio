@@ -7,6 +7,7 @@ import ClickSpark from "./Components/UI/ClickSpark";
 import Skills from "./Components/section/Skills";
 import { SparklesCore } from "./Components/UI/sparkles";
 import Education from "./Components/section/Education";
+import Projects from "./Components/section/Projects";
 
 const Root = () => {
   const [theme, setTheme] = useState(() => {
@@ -52,6 +53,7 @@ const Root = () => {
           <About />
           <Skills />
           <Education></Education>
+          <Projects></Projects>
         </ClickSpark>
       </div>
     </div>
