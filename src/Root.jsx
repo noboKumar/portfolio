@@ -26,7 +26,7 @@ const Root = () => {
           minSize={0.6}
           maxSize={1.4}
           particleDensity={100}
-          className="h-full w-full hidden lg:block"
+          className="hidden h-full w-full lg:block"
           particleColor={`${theme === "light" ? "#000000" : "#FFFFFF"}`}
         />
         {/* Grid */}
@@ -35,7 +35,7 @@ const Root = () => {
             "absolute inset-0 opacity-20",
             "[background-size:40px_40px]",
             "[background-image:linear-gradient(to_right,#525252_1px,transparent_1px),linear-gradient(to_bottom,#525252_1px,transparent_1px)]",
-            "[data-theme=dark]:[background-image:linear-gradient(to_right,#262626_1px,transparent_1px),linear-gradient(to_bottom,#262626_1px,transparent_1px)] hidden lg:block",
+            "hidden lg:block [data-theme=dark]:[background-image:linear-gradient(to_right,#262626_1px,transparent_1px),linear-gradient(to_bottom,#262626_1px,transparent_1px)]",
           )}
         />
         {/* Radial gradient for the container to give a faded look */}
@@ -51,6 +51,9 @@ const Root = () => {
           duration={400}
         >
           <NavBar theme={theme} setTheme={setTheme} />
+          <div className="fixed top-0 left-0 z-40 h-[50px] w-full">
+            <div className="h-full w-full bg-base-100"></div>
+          </div>
           <Hero />
           <About />
           <Skills />

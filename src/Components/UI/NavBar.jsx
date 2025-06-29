@@ -68,7 +68,7 @@ const NavBar = ({ theme, setTheme }) => {
     </>
   );
   return (
-    <Container className="navbar bg-base-200 sticky top-5 z-50 rounded-full px-5 shadow-sm md:px-10 lg:top-10">
+    <Container className="navbar bg-base-200 sticky rounded-xl top-0 z-50 w-full px-5 shadow-sm md:w-11/12 md:rounded-full md:px-10 md:top-10">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -92,7 +92,7 @@ const NavBar = ({ theme, setTheme }) => {
       </div>
       <div className="navbar-end gap-5">
         <ToggleTheme theme={theme} setTheme={setTheme}></ToggleTheme>
-        <a className="btn btn-primary inline-flex items-center px-2 md:px-4">
+        <a className="btn btn-primary inline-flex items-center px-2 text-sm md:px-4">
           <MdOutlineFileDownload size={20} />
           Resume
         </a>

@@ -13,7 +13,7 @@ const Logo = ({ theme }) => {
       activeClass="active"
     >
       <div
-        className={`w-20 px-5 py-5 md:w-25 ${theme === "light" ? "invert" : ""}`}
+        className={`w-10 md:px-5 md:py-5 md:w-25 ${theme === "light" ? "invert" : ""}`}
       >
         <img src={LogoPng} alt="Logo" />
       </div>
