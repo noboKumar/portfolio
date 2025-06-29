@@ -1,12 +1,51 @@
-# React + Vite
+# 🌐 My Developer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A sleek, modern, and fully responsive developer portfolio built with **React 19**, **Vite**, **Tailwind CSS v4**, and animated using **Framer Motion** and **Particles.js**.
 
-Currently, two official plugins are available:
+> ✨ This portfolio showcases my projects, skills, and contact info — all in one scroll-friendly experience!
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🚀 Live Demo
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+🌍 [https://nobokumar-portfolio.vercel.app/](https://nobokumar-portfolio.vercel.app/)  
+*(Replace with your actual link)*
+
+---
+
+## ✨ Features
+
+- ⚡ Fast load time with Vite bundler
+- 🌗 Light / Dark mode toggle (via DaisyUI)
+- 💌 Functional contact form (EmailJS)
+- 🧩 Animated background particles
+- 🎥 Smooth animations with Framer Motion
+- 🔍 Scroll navigation (React Scroll)
+- 📱 Fully responsive on all devices
+
+---
+
+## 🛠️ Tech Stack
+
+| Technology         | Description                         |
+|--------------------|-------------------------------------|
+| 🧬 React 19         | Frontend framework                  |
+| 🎨 Tailwind CSS 4   | Utility-first CSS framework         |
+| 🌸 DaisyUI          | Tailwind CSS component library      |
+| ✨ Framer Motion    | Animation library                   |
+| 🎯 Typewriter Effect | React Simple Typewriter             |
+| 🔁 React Scroll     | Smooth scrolling                    |
+| 📩 EmailJS          | Contact form email integration      |
+| 🔧 ESLint + Prettier| Code formatting & linting          |
+
+---
+
+## 🧪 Local Setup
+
+Clone this repo and run it locally:
+
+```bash
+git clone https://github.com/noboKumar/portfolio.git
+cd portfolio
+npm install
+npm run dev
