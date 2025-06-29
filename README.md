@@ -35,7 +35,6 @@ A sleek, modern, and fully responsive developer portfolio built with **React 19*
 | 🎯 Typewriter Effect | React Simple Typewriter             |
 | 🔁 React Scroll     | Smooth scrolling                    |
 | 📩 EmailJS          | Contact form email integration      |
-| 🔧 ESLint + Prettier| Code formatting & linting          |
 
 ---
 
