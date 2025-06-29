@@ -19,11 +19,6 @@ const contactDetails = [
     href: "tel:+8801404647970",
   },
   {
-    icon: <FaMapMarkerAlt className="text-primary text-xl" />,
-    info: "Khulna, Bangladesh",
-    href: "https://www.google.com/maps/place/Khulna,+Bangladesh",
-  },
-  {
     icon: <FaLinkedin className="text-primary text-xl" />,
     info: "linkedin.com",
     href: "https://www.linkedin.com/in/nobo-kumar/",
@@ -33,11 +28,17 @@ const contactDetails = [
     info: "+880 1404647970",
     href: "https://wa.me/8801404647970",
   },
+  {
+    icon: <FaMapMarkerAlt className="text-primary text-xl" />,
+    info: "Khulna, Bangladesh",
+    href: "https://www.google.com/maps/place/Khulna,+Bangladesh",
+  },
 ];
 
 const ContactInfo = () => {
   return (
-    <div className="mx-auto grid max-w-md gap-4">
+    <div className="mx-auto grid max-w-md flex-1 gap-4">
+      <h1 className="text-2xl font-semibold">Contact Information:</h1>
       {contactDetails.map((contact, idx) => (
         <a
           key={idx}

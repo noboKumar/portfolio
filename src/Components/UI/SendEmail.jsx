@@ -18,7 +18,7 @@ const SendEmail = () => {
         },
         (error) => {
           console.log("FAILED...", error.text);
-        }
+        },
       );
   };
 
@@ -26,15 +26,16 @@ const SendEmail = () => {
     <form
       ref={form}
       onSubmit={sendEmail}
-      className="bg-base-200 mx-auto max-w-2xl space-y-5 rounded-xl p-10 shadow-lg"
+      className="bg-base-200 mx-auto w-full flex-1 space-y-5 rounded-xl p-10 shadow-lg"
     >
+        <h1 className="text-4xl font-semibold">Send a message</h1>
       <div>
         <label className="mb-1 block text-sm font-semibold">Name</label>
         <input
           type="text"
           name="user_name"
           required
-          className="bg-base-100 focus:ring-primary w-full rounded-lg border border-gray-300 px-4 py-2 focus:ring-2 focus:outline-none"
+          className="bg-base-200 focus:ring-primary w-full rounded-lg border border-gray-300 px-4 py-2 focus:ring-2 focus:outline-none"
         />
       </div>
 
@@ -44,7 +45,7 @@ const SendEmail = () => {
           type="email"
           name="user_email"
           required
-          className="bg-base-100 focus:ring-primary w-full rounded-lg border border-gray-300 px-4 py-2 focus:ring-2 focus:outline-none"
+          className="bg-base-200 focus:ring-primary w-full rounded-lg border border-gray-300 px-4 py-2 focus:ring-2 focus:outline-none"
         />
       </div>
 
@@ -54,7 +55,7 @@ const SendEmail = () => {
           name="message"
           rows="5"
           required
-          className="bg-base-100 focus:ring-primary w-full rounded-lg border border-gray-300 px-4 py-2 focus:ring-2 focus:outline-none"
+          className="bg-base-200 focus:ring-primary w-full rounded-lg border border-gray-300 px-4 py-2 focus:ring-2 focus:outline-none"
         />
       </div>
 
@@ -64,7 +65,7 @@ const SendEmail = () => {
       <div>
         <input
           type="submit"
-          value="Send"
+          value="Send Message"
           className="btn btn-primary mt-2 w-full"
         />
       </div>

@@ -8,7 +8,7 @@ const Contact = () => {
   return (
     <Container className="my-20">
       <Heading text={"Contact"}></Heading>
-      <div className="py-10 mt-5 flex items-start gap-10 bg-base-300 rounded-4xl">
+      <div className="p-10 mt-5 flex items-start gap-10 border-2 border-gray-600/50 shadow-lg rounded-4xl">
         <ContactInfo></ContactInfo>
         <SendEmail></SendEmail>
       </div>
