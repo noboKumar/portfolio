@@ -9,6 +9,7 @@ import { SparklesCore } from "./Components/UI/sparkles";
 import Education from "./Components/section/Education";
 import Projects from "./Components/section/Projects";
 import Contact from "./Components/section/Contact";
+import Footer from "./Components/section/Footer";
 
 const Root = () => {
   const [theme, setTheme] = useState(() => {
@@ -56,6 +57,7 @@ const Root = () => {
           <Education></Education>
           <Projects></Projects>
           <Contact></Contact>
+          <Footer></Footer>
         </ClickSpark>
       </div>
     </div>
