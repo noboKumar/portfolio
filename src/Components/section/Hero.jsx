@@ -67,7 +67,7 @@ const Hero = () => {
         ></SlideAnimateButton>
       </div>
       <div className="avatar">
-        <div className="w-[400px] rounded-full object-cover lg:w-[600px]">
+        <div className="w-[300px] rounded-full object-cover md:w-[400px] lg:w-[600px]">
           <img src={profileImg} />
         </div>
       </div>

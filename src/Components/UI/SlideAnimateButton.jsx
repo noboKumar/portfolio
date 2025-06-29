@@ -2,7 +2,7 @@ import React from "react";
 
 const SlideAnimateButton = ({ text, icon }) => {
   return (
-    <button className="group/btn btn btn-primary relative flex justify-center overflow-hidden rounded-md">
+    <button className="group/btn btn btn-primary relative flex justify-center overflow-hidden rounded-md mx-auto lg:mx-0">
       <span className="text-center transition duration-500 group-hover/btn:translate-x-40">
         {text}
       </span>

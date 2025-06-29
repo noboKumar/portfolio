@@ -26,7 +26,7 @@ const Root = () => {
           minSize={0.6}
           maxSize={1.4}
           particleDensity={100}
-          className="h-full w-full"
+          className="h-full w-full hidden lg:block"
           particleColor={`${theme === "light" ? "#000000" : "#FFFFFF"}`}
         />
         {/* Grid */}
@@ -35,7 +35,7 @@ const Root = () => {
             "absolute inset-0 opacity-20",
             "[background-size:40px_40px]",
             "[background-image:linear-gradient(to_right,#525252_1px,transparent_1px),linear-gradient(to_bottom,#525252_1px,transparent_1px)]",
-            "[data-theme=dark]:[background-image:linear-gradient(to_right,#262626_1px,transparent_1px),linear-gradient(to_bottom,#262626_1px,transparent_1px)]",
+            "[data-theme=dark]:[background-image:linear-gradient(to_right,#262626_1px,transparent_1px),linear-gradient(to_bottom,#262626_1px,transparent_1px)] hidden lg:block",
           )}
         />
         {/* Radial gradient for the container to give a faded look */}
