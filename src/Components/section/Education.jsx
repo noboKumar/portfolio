@@ -16,7 +16,7 @@ const educationData = [
 
 export default function Education() {
   return (
-    <Container className="mx-auto pt-4 px-2 md:px-6">
+    <Container className="mx-auto my-20 px-2 md:px-6">
       {/* Heading */}
       <h2 className="text-lg md:text-xl font-semibold mb-1 tracking-tight flex items-center gap-2">
         <span>Education</span>

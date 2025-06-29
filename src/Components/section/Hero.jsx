@@ -5,10 +5,12 @@ import BlurText from "../UI/BlurText";
 import { Typewriter } from "react-simple-typewriter";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { BsTwitterX } from "react-icons/bs";
+import SlideAnimateButton from "../UI/SlideAnimateButton";
+import { MdOutlineFileDownload } from "react-icons/md";
 
 const Hero = () => {
   return (
-    <Container className="my-20 lg:my-30 flex flex-col-reverse items-center justify-around gap-10 lg:flex-row lg:gap-0">
+    <Container className="my-20 flex flex-col-reverse items-center justify-around gap-10 lg:my-30 lg:flex-row lg:gap-0">
       <div className="space-y-4 text-center lg:text-left">
         <div>
           <p className="text-lg">Hi, i am</p>
@@ -31,12 +33,12 @@ const Hero = () => {
             delaySpeed={1000}
           />
         </p>
-        <p className="text-xl lg:w-[900px]">
+        <p className="text-xl lg:w-[800px]">
           I specialize in creating performant, responsive, and maintainable web
           applications using React, TailwindCSS, Express.js, MongoDB. Let's
           discuss your next project.
         </p>
-        <div className="flex items-center justify-center gap-10 py-4 text-4xl lg:justify-start [&>*]:cursor-pointer">
+        <div className="flex items-center justify-center gap-10 py-4 text-4xl duration-300 lg:justify-start [&>*]:cursor-pointer [&>*]:hover:drop-shadow-[0_0_15px]">
           <a
             href="https://github.com/noboKumar"
             target="_blank"
@@ -59,7 +61,10 @@ const Hero = () => {
             <BsTwitterX />
           </a>
         </div>
-        <button className="btn btn-primary">Download Resume</button>
+        <SlideAnimateButton
+          text={"Download Resume"}
+          icon={<MdOutlineFileDownload size={25} />}
+        ></SlideAnimateButton>
       </div>
       <div className="avatar">
         <div className="w-[400px] rounded-full object-cover lg:w-[600px]">

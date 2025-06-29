@@ -17,7 +17,7 @@ const techStack = [
   { icon: SiReactrouter, color: "#CA4245", label: "Router" },
   { icon: SiFirebase, color: "#FFCA28", label: "Firebase" },
   { icon: FaNodeJs, color: "#339933", label: "Node.js" },
-  { icon: SiExpress, label: "Express" },
+  { icon: SiExpress, label: "Express.js" },
   { icon: SiMongodb, color: "#47A248", label: "MongoDB" },
 ];
 
