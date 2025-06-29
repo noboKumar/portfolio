@@ -37,7 +37,7 @@ const contactDetails = [
 
 const ContactInfo = () => {
   return (
-    <div className="mx-auto grid max-w-md flex-1 gap-4">
+    <div className="mx-auto grid w-full flex-1 gap-4">
       <h1 className="text-2xl font-semibold">Contact Information:</h1>
       {contactDetails.map((contact, idx) => (
         <a

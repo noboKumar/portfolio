@@ -81,9 +81,9 @@ const NavBar = ({ theme, setTheme }) => {
             {NavLinks}
           </ul>
         </div>
-        <a className="cursor-pointer">
+        <span className="cursor-pointer">
           <Logo theme={theme}></Logo>
-        </a>
+        </span>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal space-x-2 px-1 text-lg">

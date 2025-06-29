@@ -10,7 +10,7 @@ import { MdOutlineFileDownload } from "react-icons/md";
 
 const Hero = () => {
   return (
-    <Container name={"hero"} className="my-20 flex flex-col-reverse items-center justify-around gap-10 lg:my-30 lg:flex-row lg:gap-0">
+    <Container id={"hero"} className="my-20 flex flex-col-reverse items-center justify-around gap-10 lg:my-30 lg:flex-row lg:gap-0">
       <div className="space-y-4 text-center lg:text-left">
         <div>
           <p className="text-lg">Hi, i am</p>
