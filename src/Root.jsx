@@ -5,7 +5,7 @@ import About from "./Components/section/About";
 import { cn } from "./lib/utils";
 import ClickSpark from "./Components/UI/ClickSpark";
 import Skills from "./Components/section/Skills";
-import { SparklesCore } from "./Components/UI/sparkles";
+import { SparklesCore } from "./Components/UI/Sparkles";
 import Education from "./Components/section/Education";
 import Projects from "./Components/section/Projects";
 import Contact from "./Components/section/Contact";
@@ -13,7 +13,7 @@ import Footer from "./Components/section/Footer";
 
 const Root = () => {
   const [theme, setTheme] = useState(() => {
-    return localStorage.getItem("theme") || "light";
+    return localStorage.getItem("theme") || "dark";
   });
   return (
     <div className="font bg-base-100 relative min-h-screen w-full">

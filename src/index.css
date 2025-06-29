@@ -8,27 +8,27 @@
 }
 
 :root {
-  --color-primary: #000000; /* Black - main text */
-  --color-secondary: #444444; /* Dark gray - accents or subtitles */
-  --color-base-100: #dbdbdb; /* White - background */
-  --color-base-200: #f5f5f5; /* Light gray - sections/cards */
-  --color-base-300: #e0e0e0; /* Lighter gray - borders */
+  --color-primary: #000000;
+  --color-secondary: #444444;
+  --color-base-100: #dbdbdb;
+  --color-base-200: #f5f5f5;
+  --color-base-300: #e0e0e0;
 }
 
 [data-theme="dark"] {
-  --color-primary: #ffffff; /* White - main text */
-  --color-secondary: #cccccc; /* Soft white-gray - accents */
-  --color-base-100: #000000; /* Black - main background */
-  --color-base-200: #111111; /* Dark gray - section background */
-  --color-base-300: #222222; /* Deeper gray - cards/borders */
+  --color-primary: #ffffff;
+  --color-secondary: #cccccc;
+  --color-base-100: #000000;
+  --color-base-200: #111111;
+  --color-base-300: #222222;
   .btn-primary {
     background-color: #ffffff;
     color: #000000;
   }
 }
 
-.active{
-  @apply bg-base-300
+.active {
+  @apply bg-base-300;
 }
 
 .heading-font {
