@@ -28,7 +28,7 @@ const SendEmail = () => {
       onSubmit={sendEmail}
       className="bg-base-200 mx-auto w-full flex-1 space-y-5 rounded-xl p-10 shadow-lg"
     >
-        <h1 className="text-4xl font-semibold">Send a message</h1>
+        <h1 className="text-2xl md:text-4xl font-semibold">Send a message:</h1>
       <div>
         <label className="mb-1 block text-sm font-semibold">Name</label>
         <input

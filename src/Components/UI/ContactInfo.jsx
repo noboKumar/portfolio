@@ -45,7 +45,7 @@ const ContactInfo = () => {
           href={contact.href}
           target={contact.href.startsWith("http") ? "_blank" : "_self"}
           rel="noopener noreferrer"
-          className="bg-base-200 hover:bg-base-300 flex items-center gap-4 rounded-xl p-4 shadow-md transition-colors"
+          className="bg-base-200 hover:bg-base-300 flex items-center gap-4 rounded-xl p-2 md:p-4 shadow-md transition-colors"
         >
           <div className="bg-primary/10 rounded-full p-2">{contact.icon}</div>
           <div className="text-base font-semibold text-current">

@@ -16,7 +16,7 @@ const ProjectCard = ({ projectData }) => {
           className="mx-auto flex max-w-7xl flex-col items-center gap-5 rounded-2xl shadow-xl lg:flex-row"
         >
           {/* img section */}
-          <div className="max-h-[400px] w-full flex-1 overflow-y-auto p-5">
+          <div className="max-h-[200px] w-full flex-1 overflow-y-auto md:max-h-[400px] md:p-5">
             <div className="h-full">
               <img
                 src={project.photo}
@@ -30,7 +30,9 @@ const ProjectCard = ({ projectData }) => {
             <h3 className="text-xl font-semibold md:text-4xl">
               {project.title}
             </h3>
-            <p className="md:text-lg">{project.description}</p>
+            <p className="line-clamp-4 md:line-clamp-none md:text-lg">
+              {project.description}
+            </p>
             <div className="flex flex-wrap gap-2">
               {project.techStack.map((tech, tIdx) => (
                 <p
@@ -45,10 +47,20 @@ const ProjectCard = ({ projectData }) => {
             <div>
               {project.links.map((link, lIdx) => (
                 <div key={lIdx} className="flex flex-wrap gap-2">
-                  <a className="btn btn-primary" href={link.live}>
+                  <a
+                    className="btn btn-primary"
+                    href={link.live}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <IoIosLink /> Live Link
                   </a>
-                  <a className="btn btn-primary" href={link.githubRepo}>
+                  <a
+                    className="btn btn-primary"
+                    href={link.githubRepo}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <FaGithub size={20} /> GitHub
                   </a>
                   <button
